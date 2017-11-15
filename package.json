@@ -1,0 +1,19 @@
+{
+  "name": "typescript-seed",
+  "version": "1.0.0",
+  "description": "Quick start folder for Typescript programs.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "postinstall": "npm run build",
+    "start": "npm run build",
+    "watch": "nodemon -e ts --watch src -x \"npm run build\""
+  },
+  "author": "Robert Crowdis",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.26",
+    "nodemon": "^1.12.1",
+    "typescript": "^2.4.2"
+  }
+}
